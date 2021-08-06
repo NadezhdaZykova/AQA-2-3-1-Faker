@@ -16,10 +16,6 @@ public class DataGenerator {
         LocalDate todayPlus = LocalDate.now();
         return todayPlus.plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
     }
-    public static String generateDate2 (int shift) {
-        LocalDate todayPlus = LocalDate.now();
-        return todayPlus.plusDays(5).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
-    }
 
     public static String generateName(String locale) {
         Faker faker = new Faker(new Locale(locale));
